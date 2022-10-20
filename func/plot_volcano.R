@@ -107,11 +107,11 @@ plot_volcano<-function(data,
 
   if(show_gnum>0){
 
-    diff.sig<-diffres %>%
-      dplyr::filter(!str_detect(type,"UnSig")) %>%
-      arrange(PValue) %>%
-      group_by(type) %>%
-      dplyr::filter(row_number()< plot_gnum+2)
+    diff.sig<-diffres |>
+      dplyr::filter(!str_detect(type,"UnSig")) |>
+      arrange(PValue) |>
+      group_by(type) |>
+      dplyr::filter(row_number()< show_gnum+2)
 
     P<-P+geom_text_repel(data = diff.sig,
                          mapping = aes(x=logFC,v=-log10(PValue),label=gene),
