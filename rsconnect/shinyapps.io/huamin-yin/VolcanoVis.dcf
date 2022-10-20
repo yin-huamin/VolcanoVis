@@ -1,0 +1,13 @@
+name: VolcanoVis
+title: VolcanoVis
+username:
+account: huamin-yin
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 7365193
+bundleId: 6422751
+url: https://huamin-yin.shinyapps.io/VolcanoVis/
+when: 1666266538.50699
+lastSyncTime: 1666266538.507
+asMultiple: FALSE
+asStatic: FALSE
